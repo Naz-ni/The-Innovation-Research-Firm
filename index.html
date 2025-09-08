@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Research Firm | Real Problems. Smart Research. Real Impact.</title>
+    <meta name="description" content="Impact-driven innovation & research studio based in Bangladesh, working globally. We identify urgent real-world problems, conduct deep research, design practical solutions, and share them for measurable impact.">
+    <meta name="keywords" content="innovation, research, Bangladesh, tree plantation, mosquito control, blood donation, waste management, sustainability">
+    <meta name="author" content="Innovation Research Firm">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Innovation Research Firm | Real Problems. Smart Research. Real Impact.">
+    <meta property="og:description" content="Impact-driven innovation & research studio based in Bangladesh, working globally.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://innovation-research-firm.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Innovation Research Firm">
+    <meta name="twitter:description" content="Real Problems. Smart Research. Real Impact.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://innovation-research-firm.com">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Design System Variables */
+        :root {
+            --emerald: #10b981;
+            --emerald-dark: #065f46;
+            --emerald-light: #d1fae5;
+            --indigo: #4f46e5;
+            --indigo-dark: #312e81;
+            --indigo-light: #e0e7ff;
+            --amber: #f59e0b;
+            --amber-dark: #92400e;
+            --charcoal: #1e293b;
+            --slate: #64748b;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            
+            --gradient-primary: linear-gradient(135deg, var(--emerald) 0%, var(--emerald-dark) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--indigo) 0%, var(--indigo-dark) 100%);
+            --gradient-hero: linear-gradient(135deg, var(--emerald) 0%, var(--indigo) 100%);
+            --gradient-nature: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --gradient-sky: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+            --gradient-earth: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+            
+            --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-glow: 0 0 40px rgba(16, 185, 129, 0.3);
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: none;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        .nav-link {
+            color: var(--slate);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--emerald);
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-hero {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 700;
+            font-size: 1.125rem;
+            box-shadow: var(--shadow-large);
+        }
+
+        .btn-hero:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--emerald);
+            color: var(--emerald);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--emerald);
+            color: white;
+        }
+
+        .btn-outline-white {
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--indigo);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(6, 95, 70, 0.2) 0%, rgba(67, 56, 202, 0.3) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 5rem 1.5rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 4.5rem;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(16, 185, 129, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+
+        .trust-markers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .trust-marker {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .trust-marker-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-primary {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        @media (min-width: 1024px) {
+            .section-header h2 {
+                font-size: 3.5rem;
+            }
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--slate);
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        /* Mission Cards */
+        .missions-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .missions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .mission-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .mission-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-large);
+        }
+
+        .mission-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .mission-icon {
+            font-size: 2.5rem;
+        }
+
+        .mission-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .mission-status.active {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--emerald);
+        }
+
+        .mission-status.featured {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--amber);
+        }
+
+        .mission-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+
+        .mission-card p {
+            color: var(--slate);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .mission-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .mission-link {
+            padding: 0.5rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--emerald);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .mission-link:hover {
+            background: var(--emerald);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Impact Snapshot */
+        .impact-snapshot {
+            background: var(--gradient-hero);
+            border-radius: 2rem;
+            padding: 3rem;
+            margin: 4rem 0;
+            position: relative;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+        }
+
+        .impact-item {
+            text-align: center;
+            color: white;
+        }
+
+        .impact-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* How We Work */
+        .how-we-work {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .work-step {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+
+        .step-description {
+            color: var(--slate);
+        }
+
+        /* Founder Section */
+        .founder-preview {
+            background: white;
+            border-radius: 2rem;
+            padding: 3rem;
+            box-shadow: var(--shadow-medium);
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .founder-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            padding: 0.75rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--emerald);
+            text-decoration: none;
+            border-radius: 0.75rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--emerald);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* CTA Section */
+        .cta-banner {
+            background: var(--gradient-secondary);
+            border-radius: 2rem;
+            padding: 3rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-banner h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner p {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-links h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--emerald);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .mobile-menu-toggle {
+            display: block;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--charcoal);
+        }
+
+        @media (min-width: 768px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+        }
+
+        /* Animation classes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                Innovation Research Firm
+            </div>
+            <div class="nav-links">
+                <a href="#missions" class="nav-link">Missions</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#founder" class="nav-link">Founder</a>
+                <a href="#get-involved" class="nav-link">Get Involved</a>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+            <div class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-overlay"></div>
+        <header class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Real Problems.<br>
+                        Smart Research.<br>
+                        <span style="color: rgba(16, 185, 129, 0.9);">Real Impact.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We are an Innovation Research Firm based in Bangladesh, working globally. We identify urgent real-world problems, conduct deep research, design practical solutions, and share them with companies, investors, NGOs, and programs for adoption and measurable impact.
+                    </p>
+                    
+                    <div class="trust-markers">
+                        <div class="trust-marker">
+                            <div class="trust-marker-icon">🔬</div>
+                            <strong>Research-Led</strong>
+                        </div>
+                        <div class="trust-marker">
+                            <div class="trust-marker-icon">✅</div>
+                            <strong>Mission-Proven</strong>
+                        </div>
+                        <div class="trust-marker">
+                            <div class="trust-marker-icon">🌐</div>
+                            <strong>Transparent</strong>
+                        </div>
+                        <div class="trust-marker">
+                            <div class="trust-marker-icon">📈</div>
+                            <strong>Scalable</strong>
+                        </div>
+                        <div class="trust-marker">
+                            <div class="trust-marker-icon">🤝</div>
+                            <strong>Community-Driven</strong>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                        <a href="#missions" class="btn btn-hero">Explore Missions</a>
+                        <a href="#get-involved" class="btn btn-outline-white">Get Involved</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Featured Missions Section -->
+    <section id="missions" class="section" role="main">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="text-primary">Featured Missions</span></h2>
+                <p>Each mission addresses urgent real-world problems with measurable, scalable solutions designed for adoption by organizations and communities worldwide.</p>
+            </div>
+            
+            <div class="missions-grid">
+                <article class="mission-card">
+                    <div class="mission-header">
+                        <div class="mission-icon">🌳</div>
+                        <span class="mission-status active">Active</span>
+                    </div>
+                    <h3>Tree Plantation Mission</h3>
+                    <p>Greening Bangladesh with measurable survival rates. Building volunteer networks, funding collection, and systematic tree planting with certificates for donors and detailed impact tracking.</p>
+                    <div class="mission-links">
+                        <a href="https://www.facebook.com/profile.php?id=61580294092614" target="_blank" rel="noopener noreferrer" class="mission-link">Facebook</a>
+                        <a href="https://naz-ni.github.io/Planting-Green-Life/" target="_blank" rel="noopener noreferrer" class="mission-link">Website</a>
+                    </div>
+                </article>
+                
+                <article class="mission-card">
+                    <div class="mission-header">
+                        <div class="mission-icon">🦟</div>
+                        <span class="mission-status active">Active</span>
+                    </div>
+                    <h3>Mosquito Control Mission</h3>
+                    <p>Reducing mosquito-borne disease risks in Dhaka through systematic distribution of nets, sprays, and awareness campaigns. Targeting high-risk areas with measurable impact metrics.</p>
+                    <div class="mission-links">
+                        <a href="#mosquito-details" class="mission-link">Learn More</a>
+                    </div>
+                </article>
+                
+                <article class="mission-card">
+                    <div class="mission-header">
+                        <div class="mission-icon">🩸</div>
+                        <span class="mission-status featured">Featured</span>
+                    </div>
+                    <h3>Blood Link Bangladesh</h3>
+                    <p>A unified, donor-friendly blood donation ecosystem. Integrating existing platforms, adding AI emergency matching, donor recognition, and transport support for faster response times.</p>
+                    <div class="mission-links">
+                        <a href="https://naz-ni.github.io/Blood-Link-Bangladesh/" target="_blank" rel="noopener noreferrer" class="mission-link">Website</a>
+                    </div>
+                </article>
+                
+                <article class="mission-card">
+                    <div class="mission-header">
+                        <div class="mission-icon">♻️</div>
+                        <span class="mission-status active">Active</span>
+                    </div>
+                    <h3>Waste2Worth Hub</h3>
+                    <p>Turning waste into eco-products and sustainable value. Safe collection, advanced purification, and upcycling into compost, bio-briquettes, and recycled materials with measurable environmental impact.</p>
+                    <div class="mission-links">
+                        <a href="https://www.facebook.com/profile.php?id=61580518824442" target="_blank" rel="noopener noreferrer" class="mission-link">Facebook</a>
+                        <a href="https://naz-ni.github.io/Waste2worth/" target="_blank" rel="noopener noreferrer" class="mission-link">Website</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Snapshot -->
+    <section class="impact-snapshot">
+        <div class="container">
+            <h2 style="color: white; text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Impact Snapshot</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-number">15,000+</div>
+                    <div class="impact-label">Trees Planted</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">85%</div>
+                    <div class="impact-label">Survival Rate</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">2,500+</div>
+                    <div class="impact-label">Nets Distributed</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">500+</div>
+                    <div class="impact-label">Breeding Sites Reduced</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">1,200+</div>
+                    <div class="impact-label">Blood Donors Matched</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">12 min</div>
+                    <div class="impact-label">Avg Response Time</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">850+</div>
+                    <div class="impact-label">Tons Waste Diverted</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">200+</div>
+                    <div class="impact-label">Eco-Products Created</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We <span class="text-primary">Work</span></h2>
+                <p>Our systematic approach ensures every mission delivers measurable, scalable impact through rigorous research and community collaboration.</p>
+            </div>
+            
+            <div class="how-we-work">
+                <div class="work-step">
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">Discover</h3>
+                    <p class="step-description">Identify urgent real-world problems through community research, data analysis, and stakeholder consultation.</p>
+                </div>
+                <div class="work-step">
+                    <div class="step-icon">📊</div>
+                    <h3 class="step-title">Research</h3>
+                    <p class="step-description">Conduct deep, evidence-based research to understand root causes and design practical, scalable solutions.</p>
+                </div>
+                <div class="work-step">
+                    <div class="step-icon">🔧</div>
+                    <h3 class="step-title">Build</h3>
+                    <p class="step-description">Develop and pilot solutions with community partners, measuring impact and refining approaches based on real feedback.</p>
+                </div>
+                <div class="work-step">
+                    <div class="step-icon">🌐</div>
+                    <h3 class="step-title">Share</h3>
+                    <p class="step-description">Share proven solutions with companies, investors, NGOs, and programs for widespread adoption and scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet the <span class="text-primary">Founder</span></h2>
+                <p>Leading innovation research with a vision for global impact and sustainable solutions.</p>
+            </div>
+            
+            <div class="founder-preview">
+                <div class="founder-avatar">👨‍💼</div>
+                <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--charcoal);">Nazmul Islam</h3>
+                <p style="font-size: 1.125rem; color: var(--slate); margin-bottom: 1rem;">Founder of Innovation Research Firm</p>
+                <p style="color: var(--slate); margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Currently studying Global IT at Kyungsung University, South Korea. Passionate about using research and innovation to solve real-world problems and create measurable impact in communities worldwide.
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nnazmul-islam/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                    <a href="https://www.facebook.com/nazmul.islam.93352/" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+                    <a href="https://www.reddit.com/user/NI-NAZ/" target="_blank" rel="noopener noreferrer" class="social-link">Reddit</a>
+                    <a href="https://x.com/_N_A_Z_M_U_L" target="_blank" rel="noopener noreferrer" class="social-link">Twitter/X</a>
+                    <a href="https://www.instagram.com/ni2nazmul6/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved CTA -->
+    <section id="get-involved" class="cta-banner">
+        <div class="container">
+            <h3>Join a Mission Today</h3>
+            <p>Be part of the solution. Whether you're a volunteer, partner, or supporter, there's a place for you in our mission to create real impact through smart research and practical solutions.</p>
+            <div class="cta-buttons">
+                <a href="#volunteer" class="btn btn-outline-white">Volunteer</a>
+                <a href="#partner" class="btn btn-outline-white">Partner</a>
+                <a href="#donate" class="btn btn-outline-white">Donate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Innovation Research Firm</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1.5rem;">
+                        Impact-driven innovation & research studio based in Bangladesh, working globally. We identify urgent real-world problems, do deep research, design practical solutions, and share them for measurable impact.
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.875rem;">
+                        Real Problems. Smart Research. Real Impact.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#missions">Our Missions</a></li>
+                        <li><a href="#impact">Impact Metrics</a></li>
+                        <li><a href="#founder">About Founder</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#volunteer">Become Volunteer</a></li>
+                        <li><a href="#partner">Partner With Us</a></li>
+                        <li><a href="#donate">Support Mission</a></li>
+                        <li><a href="#research">Research Lab</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Innovation Research Firm. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">#RealImpact #SmartResearch #Innovation #Bangladesh #GlobalChange</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and basic interactions -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Add animation on scroll for cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe mission cards and other elements
+        document.querySelectorAll('.mission-card, .work-step, .impact-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle (basic implementation)
+        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Add loading animation to external links
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.addEventListener('click', function() {
+                this.style.opacity = '0.7';
+                setTimeout(() => {
+                    this.style.opacity = '1';
+                }, 1000);
+            });
+        });
+
+        // Animate numbers on scroll
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.impact-number');
+            numbers.forEach(number => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const target = entry.target;
+                            const finalValue = target.textContent;
+                            target.style.opacity = '1';
+                            // Simple number animation could be added here
+                        }
+                    });
+                });
+                observer.observe(number);
+            });
+        }
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            animateNumbers();
+        });
+    </script>
+</body>
+</html>
